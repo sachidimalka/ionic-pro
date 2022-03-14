@@ -4,6 +4,36 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+  <ion-item >
+    <ion-label position="floating">First Name</ion-label>
+    <ion-input [(ngModel)]="first_name" type="text"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating">Last Name</ion-label>
+    <ion-input [(ngModel)]="last_name" type="text"></ion-input>
+  </ion-item>
 
+  <ion-item >
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="email" type="text" required></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating">Tele Number</ion-label>
+    <ion-input [(ngModel)]="last_name" type="text"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating">Password</ion-label>
+    <ion-input [(ngModel)]="password" type="text" required></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating">Confirm Password</ion-label>
+    <ion-input [(ngModel)]="confirm_password" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-button class="ion-margin-top" type="submit" expand="block" color="light" (click)="onSubmit()">
+    SignUp
+  </ion-button>
+
+  <app-explore-container name="Signup page"></app-explore-container>
 </ion-content>
