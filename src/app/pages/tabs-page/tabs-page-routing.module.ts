@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
-import { SchedulePage } from '../schedule/schedule';
+import { WorkPage } from '../work-experience/work';
 
 
 const routes: Routes = [
@@ -10,11 +10,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'schedule',
+        path: 'work',
         children: [
           {
             path: '',
-            component: SchedulePage,
+            component: WorkPage,
           },
           {
             path: 'session/:sessionId',
@@ -49,17 +49,17 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'about',
+        path: 'project',
         children: [
           {
             path: '',
-            loadChildren: () => import('../about/about.module').then(m => m.AboutModule)
+            loadChildren: () => import('../project-experience/project.module').then(m => m.ProjectModule)
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/app/tabs/schedule',
+        redirectTo: '/app/tabs/work',
         pathMatch: 'full'
       }
     ]

@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
-import { AboutPage } from './about';
+import { ProjectPage } from './project';
 import { PopoverPage } from '../about-popover/about-popover';
-import { AboutPageRoutingModule } from './about-routing.module';
+import { ProjectPageRoutingModule } from './project-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AboutPageRoutingModule
+    ProjectPageRoutingModule
   ],
-  declarations: [AboutPage, PopoverPage],
+  declarations: [ProjectPage, PopoverPage],
   entryComponents: [PopoverPage],
-  bootstrap: [AboutPage],
+  bootstrap: [ProjectPage],
 })
-export class AboutModule {}
+export class ProjectModule { }
