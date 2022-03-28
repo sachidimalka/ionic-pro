@@ -7,11 +7,11 @@ import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
 @Component({
-  selector: 'page-schedule',
-  templateUrl: 'schedule.html',
-  styleUrls: ['./schedule.scss'],
+  selector: 'page-work',
+  templateUrl: 'work.html',
+  styleUrls: ['./work.scss'],
 })
-export class SchedulePage implements OnInit {
+export class WorkPage implements OnInit {
   // Gets a reference to the list element
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
 
